@@ -3,78 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CloudOceanLearning Software Institute</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+    <title>Welcome to CloudOceanLearning</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #000, #004dff);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .welcome-container {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .welcome-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+        }
+
+        .welcome-container h1 {
+            font-size: 2.5rem;
+            margin: 0 0 20px;
+        }
+
+        .welcome-container p {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        .thank-you {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #00ffff;
+        }
+        #img:hover{
+             position: fixed;
+             width: max-content;
+        }
+
+    </style>
 </head>
 <body>
-    <header>
-        <h1>CloudOceanLearning Software Institute</h1>
-        <nav>
-            <ul>
-                <li><a href="#aws-devops">AWS DevOps</a></li>
-                <li><a href="#python-fullstack">Python Full Stack Development</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="aws-devops">
-            <h2>AWS DevOps Course</h2>
-            <p>This course covers AWS DevOps and related tools.</p>
-            <ul>
-                <li>GIT</li>
-                <li>Jenkins</li>
-                <li>SonarQube</li>
-                <li>Trivy</li>
-                <li>Docker</li>
-                <li>AWS</li>
-            </ul>
-        </section>
-
-        <section id="python-fullstack">
-            <h2>Python Full Stack Development Course</h2>
-            <p>This course covers full stack development with Python.</p>
-            <h3>Frontend:</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Angular</li>
-            </ul>
-            <h3>Backend:</h3>
-            <ul>
-                <li>Python</li>
-                <li>Django</li>
-                <li>Docker</li>
-                <li>AWS</li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:cloudoceanlearning@gmail.com">cloudoceanlearning@gmail.com</a></p>
-            <p>Phone: <a href="tel:+918983462394">898-346-2394</a></p>
-            <p>Address: PL NO 113, Gajanan Nagar, New Narsala Road, Nagpur</p>
-            <form id="contact-form" action="https://formspree.io/f/mvgpdyen" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-                <label for="course">Interested Course:</label>
-                <select id="course" name="course" required>
-                    <option value="aws-devops">AWS DevOps</option>
-                    <option value="python-fullstack">Python Full Stack Development</option>
-                </select>
-                <input type="submit" value="Submit">
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 CloudOceanLearning Software Institute. All rights reserved.</p>
-    </footer>
+    <div id="img">
+        <img src="./COL LOGO.jpg" alt="congrats">
+    </div>
+    <div class="welcome-container">
+        <h1>Welcome to CloudOcean-Learning</h1>
+        <p>Thank you so much for joining our workshop!</p>
+        <p class="thank-you">We hope you have a great learning experience.</p>
+    </div>
 </body>
 </html>
